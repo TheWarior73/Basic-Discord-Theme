@@ -13,11 +13,11 @@ Learn to theme : https://learntothe.me
 */
 
 /* Main colors */
-:root {
+.theme-dark {
     --main-color: var(--client-color);
-    --main-color-07: hsla(var(--main-color)/.7);
-    --main-color-05: hsla(var(--main-color)/.5);
-    --main-color-03: hsla(var(--main-color)/.3);
+    --main-color-07: hsla(var(--main-color)/0.7);
+    --main-color-05: hsla(var(--main-color)/0.5);
+    --main-color-03: hsla(var(--main-color)/0.3);
     --url-color: #43b581;
     --user-panel-bottom-left-opacity: .5;
 

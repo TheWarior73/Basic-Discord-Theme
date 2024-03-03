@@ -1,0 +1,29 @@
+/**
+ * @name Aline's Custom Discord theme
+ * @author Aline, The warior#7947
+ * @description A custom theme made by Aline because I like when there are some changes here and there
+ * @website https://nfr-app-center.vercel.app/
+ * @invite BFA8GTvsuN
+ * @version 1.0
+*/
+
+/* Ressources 
+Colors : https://htmlcolorcodes.com/
+Learn to theme : https://learntothe.me
+Assets used in this project : 
+    - https://discord-extensions.github.io/modern-indicators/ 
+*/
+
+@import url("https://TheWarior73.github.io/Discord-Theme/inerworkings.css");
+
+
+:root {
+    --client-color: hsl(217, 51.1, 55.9);
+    --url-color: #43b581;
+    --user-panel-bottom-left-opacity: .5;
+
+    
+    --indicator-border-size: 2px;
+    --indicator-border-style: solid;
+    --indicator-rounding: 0;
+}
