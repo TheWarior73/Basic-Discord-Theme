@@ -9,34 +9,71 @@
 /* Ressources 
 Colors : https://htmlcolorcodes.com/
 Learn to theme : https://learntothe.me
+
+Here is a collection of backgrounds :
+
+default : url('https://cdn.discordapp.com/attachments/696040243748536401/850445513542205531/1-IrFMpUu.png') 
+Forest : https://cdn.discordapp.com/attachments/939605873750327397/1143140886423818270/Forest_wallpaper2.jpg
+field (pastel) : https://images.wallpaperscraft.com/image/single/field_tulips_flowers_140741_1280x720.jpg
+field (guy) : https://images.wallpaperscraft.com/image/single/alone_art_field_127230_1280x720.jpg
+astronaut : https://images.wallpaperscraft.com/image/single/astronaut_swing_bouquet_154206_1280x720.jpg
+lilypad lake : https://images.wallpaperscraft.com/image/single/boat_fisherman_water_lilies_131750_1280x720.jpg 
+
+
 */
-
-
 
 /*
 ==== / Colors / ====================================================================================================
 */
 
 
-
 :root {
+    /* Backgrounds Collection */
+    --forest-background: url('https://cdn.discordapp.com/attachments/939605873750327397/1143140886423818270/Forest_wallpaper2.jpg');
+    --field-pastel-background: url('https://images.wallpaperscraft.com/image/single/field_tulips_flowers_140741_1280x720.jpg');
+    --field-guy-background: url('https://images.wallpaperscraft.com/image/single/alone_art_field_127230_1280x720.jpg');
+    --astronaut-background: url('https://images.wallpaperscraft.com/image/single/astronaut_swing_bouquet_154206_1280x720.jpg');
+    --lilypad-background: url('https://images.wallpaperscraft.com/image/single/boat_fisherman_water_lilies_131750_1280x720.jpg');
+    
+    /* Customize some elements here */
 	--chat-username-background: var(--main-color-6); /* To disable, set to --main-color-3 /!\ Will not disable the on:hover stuff /!\ */
 	--home-icon: url("https://img.icons8.com/?size=256&id=114892&format=png") ;
 	--home-position: center ;
 	--home-size: 50px ;
-	--user-background: var(--main-color-2); /* To custom, replace var() by url('IMG URL HERE') the img url can be an img in the same directory or one from the internet*/
-	--user-about-me-opacity: .1; /*Default: 0.1 / between 0.0 (invisible) and 1.0 (plain)*/
+	--user-about-me-opacity: .17; /*Default: 0.1 / between 0.0 (invisible) and 1.0 (plain)*/
 
-	/* Body scrollbar */
+	  /* Body scrollbar */
     --scrollbar-auto-thumb: var(--main-color-5);
     --scrollbar-auto-track: var(--main-color-4);
     /* Server Channel List scrollbar*/
     --scrollbar-thin-thumb: var(--main-color-6);
     --scrollbar-thin-track: var(--main-color-5);
 	
+    /* Taken from Clearvision's Team ( https://github.com/ClearVision/ClearVision-v6 ) */
+    --background-image: var(--lilypad-background);  /*Default: var(--main-color-2) / To custom, replace var() by url('IMG URL HERE')[or one of the Backgrounds in the collection] the img url can be an img in the same directory or one from the internet*/
+    --background-shading: 50%;
+    --background-position: center;
+    --background-size: cover;
+    --background-repeat: no-repeat;
+    --background-attachment: fixed;
+    --background-brightness: 100%;
+    --background-contrast: 150%;
+    --background-saturation: 100%;
+    --background-grayscale: 0%;
+    --background-invert: 0%;
+    --background-overlay: rgba(0,0,0,0.6);
+
 }
 
 
+/* Default theme :
+	--main-color-1: #5581c8;
+	--main-color-2: #4A71AF;
+	--main-color-3: #406196;
+	--main-color-4: #35517D;
+	--main-color-5: #2B4164;
+	--main-color-6: #20304B;
+*/
 .theme-dark {
 	/* Theme Main colors */
     --main-color-1: #5581c8; /* Works best with a gradient (go to https://htmlcolorcodes.com/ to find one based on your custom main color1)*/
@@ -45,6 +82,7 @@ Learn to theme : https://learntothe.me
     --main-color-4: #35517D;
     --main-color-5: #2B4164;
     --main-color-6: #20304B;
+
 
     --url-color: #43b581;
 
@@ -148,7 +186,6 @@ Learn to theme : https://learntothe.me
 	background-color: var(--main-color-4);
 }
 
-
 /* Server List*/
 .scroller__3d071.none__3919e.scrollerBase__2b744 {
 	background: var(--main-color-6);
@@ -159,15 +196,47 @@ Learn to theme : https://learntothe.me
 }
 
 
+/* === Friendlist === */
+/* Searchbar */
+.searchBar_ff8800 {
+  background: var(--main-color-5);
+}
+/* Body */
+.tabBody_b3d268 {
+  background: var(--main-color-6);
+}
+/* Action buttons + card hover action buttons */
+.actionButton__23182, .actionButton__23182.highlight__5b64b {
+  background: var(--main-color-5);
+}
+/* Action buttons hover */
+.actionButton__23182:hover {
+  background: var(--main-color-6);
+}
+/* Cards */
+.peopleListItem_d14722:hover, .peopleListItem_d14722.active__6b8ff {
+  background: var(--main-color-4);
+}
+/* Friendlist friends icon */
+.icon__4cb88 {
+  color: var(--white-500);
+}
+/* Filters */
+.topPill__0cdf1 .themed_b957e8.selected__5711d.item__48dda {
+  background: var(--main-color-4);
+}
 
-/* === Channel Icons === */
+/* === Icons === */
+/* CHANNEL ICONS */
 /* Empty channel, forum post icons */
 .emptyChannelIcon__1a1ba, .iconWrapper__3e4a9 {
   	background: var(--main-color-5);
 }
 
-/* Emojis pannel */
 
+
+
+/* === Emojis pannel === */
 /* Servers */
 .wrapper_cd625e {
 	background: var(--main-color-6);
@@ -217,7 +286,10 @@ Learn to theme : https://learntothe.me
 ==== / Body / ====================================================================================================
 */
 
-
+/* Top Unread Bar */
+.newMessagesBar__8b6d7 {
+  background: var(--main-color-1);
+}
 
 /* Body */
 .scroller__1f96e {
@@ -258,7 +330,7 @@ Learn to theme : https://learntothe.me
   	--divider-color: var(--main-color-1) ;
 }
 
-.content_d67847 {
+.content_d67847, .isUnread__6f880 .content_d67847 {
   	background: var(--bg-overlay-chat, var(--main-color-1));
   	color: var(--white-500);
 }
@@ -406,10 +478,11 @@ Learn to theme : https://learntothe.me
 	background: var(--main-color-3);
 }
 
+
 /* Thread */
 .floating_f021e2 {
 	background: var(--main-color-3);
-	border-left: 1px solid var(--main-color-5);
+	border-left: 1px solid var(--main-color-5); 
 }
 /* Pinned Messages */
 .messagesPopoutWrap_b3b384 {
@@ -436,8 +509,8 @@ Learn to theme : https://learntothe.me
 
 
 
-/* Activity */
-.panel_bd8c76.activityPanel__22355 {
+/* Activity, Activity stream button */
+.panel_bd8c76.activityPanel__22355, .disabledButtonOverlay__2a969 {
     background: var(--main-color-2);
 }
 
@@ -465,10 +538,14 @@ Learn to theme : https://learntothe.me
 
 
 /* User container styling */
-.theme-dark .container_ca50b9 {
+.theme-dark .container_ca50b9, .container_ca50b9 {
     background: var(--main-color-2);
 }
+.withTagAsButton_cc125f:hover, .withTagless__98b7d:hover {
+  background: var(--main-color-3);
+}
 
+/* === Voice === */
 /* voice modal */
 .container_d667ff {
     background: var(--main-color-2);
@@ -478,15 +555,17 @@ Learn to theme : https://learntothe.me
  	background: var(--main-color-2);
  	transition: .3s;
 }
-
 .button__66e8c.buttonColor_a6eb73.button_afdfd9.lookFilled__19298.colorBrand_b2253e.sizeSmall__71a98.grow__4c8a4.button__66e8c:hover{
   	background: var(--main-color-3);
 	transition: .3s;
 }
-
 /* voice call buttons + Settings/mute/deafen*/
 button.button__4f306:hover, button.button__4f306.enabled__470f0:hover, span.button__4f306.enabled__470f0:hover, span.button__4f306:hover{
   	background: var(--main-color-3);
+}
+/* Screenshare */
+.card__7756d {
+  background: var(--main-color-3);
 }
 
 
@@ -541,10 +620,6 @@ button.button__4f306:hover, button.button__4f306.enabled__470f0:hover, span.butt
 
 
 
-/* background */
-.userProfileInnerThemedNonPremium__3d0a6 {
-	background: var(--user-background);
-}
 .overlayBackground__86b78 {
 	background-color: rgba(255, 255, 255, var(--user-about-me-opacity));
 }
@@ -590,9 +665,20 @@ button.button__4f306:hover, button.button__4f306.enabled__470f0:hover, span.butt
 
 
 /* === DM profile Right Popout === */
-.userPanelInnerThemed__1804b {
-	background: var(--main-color-1);
+.userPanelInnerThemed__1804b, .userProfileInnerThemedNonPremium__3d0a6 {
+  background:var(--background-image) var(--background-position)/var(--background-size) var(--background-repeat) var(--background-attachment);
+  filter:grayscale(var(--background-grayscale)) sepia(25%) invert(var(--background-invert)) brightness(var(--background-brightness)) contrast(var(--background-contrast)) saturate(var(--background-saturation)) blur(0px);
+  z-index:-9999
 }
+
+/* Groups right pannel */
+.members__9f47b {
+  background: var(--main-color-5);
+}
+.clickable__17ccb.container__4f20e:hover {
+  background: var(--main-color-3);
+}
+
 
 
 /*
@@ -754,7 +840,7 @@ button.button__4f306:hover, button.button__4f306.enabled__470f0:hover, span.butt
     border-left: var(--indicator-border-size) var(--indicator-border-style) transparent;
   }
   .channel_c21703:hover {
-    background-color: var(--indicator-hover);
+    background-color: var(--main-color-4);
   }
   .channel_c21703:has(.selected_d94cf9) {
     border-left-color: var(--indicator-selected-border);
