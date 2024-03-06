@@ -1,4 +1,4 @@
-## [Jump to the installation section]()
+## [Jump to the installation section](#download)
 # Informations
 > [!NOTE]
 > Hello Everyone ! I am working on this side project on my spare time and would gladly apreciate any help, this is my first time putting a theme together and it is quite messy, working with css is not my strong point either and as you will see it is really junky, this is why I am in the need of some help to contribute to this theme !
