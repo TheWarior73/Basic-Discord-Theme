@@ -1,3 +1,5 @@
+<img width=800 src='./img/Scr Server Screenshot.png'>
+
 ## [Jump to the installation section](#download)
 # Informations
 > [!NOTE]
