@@ -42,7 +42,7 @@ lilypad lake : https://images.wallpaperscraft.com/image/single/boat_fisherman_wa
 	--home-size: 50px ;
 	--user-about-me-opacity: .17; /*Default: 0.1 / between 0.0 (invisible) and 1.0 (plain)*/
 
-	  /* Body scrollbar */
+	/* Body scrollbar */
     --scrollbar-auto-thumb: var(--main-color-5);
     --scrollbar-auto-track: var(--main-color-4);
     /* Server Channel List scrollbar*/
@@ -66,7 +66,7 @@ lilypad lake : https://images.wallpaperscraft.com/image/single/boat_fisherman_wa
 }
 
 
-/* Default theme :
+/* Default dark theme :
 	--main-color-1: #5581c8;
 	--main-color-2: #4A71AF;
 	--main-color-3: #406196;
@@ -226,6 +226,22 @@ lilypad lake : https://images.wallpaperscraft.com/image/single/boat_fisherman_wa
   background: var(--main-color-4);
 }
 
+/* Active now bar */
+.container__0a6a9 {
+    background: var(--main-color-5)
+}
+.theme-dark .outer_a41cf3.interactive__01cfa {
+    background: var(--main-color-6);
+    transition: .5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.section_efc22d {
+    background: var(--main-color-5);
+}
+.theme-dark .outer_a41cf3.interactive__01cfa:hover {
+    background: var(--main-color-4);
+    transition: .1s cubic-bezier(0.74, 0.46, 0.58, 1.08);
+}
+
 /* === Icons === */
 /* CHANNEL ICONS */
 /* Empty channel, forum post icons */
@@ -242,14 +258,17 @@ lilypad lake : https://images.wallpaperscraft.com/image/single/boat_fisherman_wa
 	background: var(--main-color-6);
 }
 /* searchbar around, preview */
-.header__55964, .inspector__993e1 {
+.header__55964, .emojiPickerHasTabWrapper__80686 .header__55964, .inspector__993e1, .contentWrapper__321ed {
 	background: var(--main-color-5)
 }
-/* Searchbar */
-.container_e4c233 {
+/* emoji Searchbar, Gifs searchbar, Button selected (Gifs, stickers, emojis) */
+.container_e4c233, .container__7712a, .navButtonActive__735cb {
 	background: var(--main-color-6);
 }
-
+/* Stickers */
+.stickerInspected__1c897 {
+    background: var(--main-color-6);
+}
 /* emojis */
 .bodyWrapper_cc3635, .wrapper__7a35f {
 	background: var(--main-color-4);
@@ -261,8 +280,11 @@ lilypad lake : https://images.wallpaperscraft.com/image/single/boat_fisherman_wa
 	background: transparent;
 }
 
-/* === Report pannel === */
 
+
+
+
+/* === Report pannel === */
 /* Message preview*/
 .messagePreviewContainer_b47f3f {
 	background: var(--main-color-5);
@@ -280,6 +302,9 @@ lilypad lake : https://images.wallpaperscraft.com/image/single/boat_fisherman_wa
 	background: var(--main-color-5);
 }
 
+.container__30406 {
+    background: var(--main-color-5);
+}
 
 
 /*
@@ -347,6 +372,15 @@ lilypad lake : https://images.wallpaperscraft.com/image/single/boat_fisherman_wa
 .button_d553e5:hover {
 	background: var(--main-color-2);
 	color: var(--white-500);
+}
+
+/* welcome button in chat */
+.lookFilled__19298.colorPrimary__6ed40 {
+    background: var(--main-color-5);
+}
+/* hover */
+.lookFilled__19298.colorPrimary__6ed40:hover {
+    background: var(--main-color-4);
 }
 
 /* Mentioned message */
@@ -466,12 +500,43 @@ lilypad lake : https://images.wallpaperscraft.com/image/single/boat_fisherman_wa
 
 
 /* Body */
-.container_b181b6 {
+.container_b181b6, .container_b181b6 .thin_b1c063 {
 	background: var(--main-color-6);
 }
+/* Searchbar */
+.matchingPostRow__510be, .mainCard__8a660 header_c01fde .headerWithMatchingPosts_da85d4 {
+    background: var(--main-color-4);
+}
+/* Tags, show all tags, sort */
+.pill_f055c3, .tagsButton_e96762, .sortDropdown_ec3016 {
+    background: var(--main-color-5);
+}
+.container_ae7412 {
+    background: var(--main-color-4);
+}
+
 /* Cards */
 .mainCard__8a660 {
 	background: var(--main-color-5);
+}
+.container_c24cbd:hover {
+    background: rgba(109, 117, 192, 0.1);
+}
+/* tags */
+.theme-dark .tagPill_d9a5cc {
+    background: var(--main-color-5);
+    box-shadow: 0 1px 0 var(--main-color-6);
+}
+/* msg number icon */
+.hasRead_fe4d7f .messageCountIcon__73000 {
+    color: var(--white-500);
+}
+/* Text content preview on card*/
+.contentPreview_b317ee {
+    background: var(--main-color-6);
+}
+.theme-dark .textContentFooter__5a630 {
+    background: linear-gradient(var(--main-color-6), rgba(109, 117, 192, 0.1));
 }
 /* Opened (dark, light), Hover, Post title Bar (dark, light) */
 .theme-dark .container__99b06.isOpen__8593d, .container__99b06.isOpen__8593d, .container__99b06:hover, .theme-dark .themed_b152d4, .themed_b152d4 {
@@ -620,7 +685,7 @@ button.button__4f306:hover, button.button__4f306.enabled__470f0:hover, span.butt
 
 
 
-.overlayBackground__86b78 {
+.overlayBackground__86b78, .buttonColor__01bf8 {
 	background-color: rgba(255, 255, 255, var(--user-about-me-opacity));
 }
 /* Server roles, Badges, Message Textarea */
@@ -631,7 +696,6 @@ button.button__4f306:hover, button.button__4f306.enabled__470f0:hover, span.butt
 .discordIcon_feeef1 {
 	color: var(--white-500);
 }
-
 
 
 /*
@@ -682,15 +746,7 @@ button.button__4f306:hover, button.button__4f306.enabled__470f0:hover, span.butt
 
 
 /*
-==== // ======== // ======== // ======== // ======== // ======== // ======== // ======== // ======== // ====
-
-======== // ======== // ======== // ======== // ======== // ======== // ======== // ======== // ======== // 
-
-============ // ======== // ======== // ======== // ======== // ======== // ======== // ======== // ========
-
-================ // ======== // ======== // ======== // ======== // ======== // ======== // ======== // ====
-
-==================== // ======== // ======== // ======== // ======== // ======== // ======== // ======== // 
+==== // ======== // ======== // ======== // ======== // ======== // ======== // ======== // ======== // ======== // ======== // ======== // ======== // ======== //
 */
 
 /* The following code is from https://discord-extensions.github.io/modern-indicators/ Licensed under MIT copyright, It has been modified to suit the theme better
