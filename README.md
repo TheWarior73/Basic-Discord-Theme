@@ -32,14 +32,14 @@ Suggest more things because i'm bad at making todo lists when i don't know what 
 > [!NOTE]
 > Not yet available to use the Online Themes Feature with this theme
 
-1. Download [this file](https://github.com/TheWarior73/Discord-Theme/blob/main/Aline's_local.theme.css)
+1. Download [this file](https://github.com/TheWarior73/Discord-Theme/blob/main/local.theme.css)
 2. Go to The `User Settings (CTRL + ,) > Themes > Open Themes Folder` Then slide the file inside of the folder
 3. Close the explorer and click on `Load Missing Themes`
 4. Enable the theme
 
 ### ![betterdiscord](https://discord-extensions.github.io/assets/icons/betterdiscord.png) **[BetterDiscord](https://betterdiscord.app)**
 
-- [Direct Download](https://github.com/TheWarior73/Discord-Theme/blob/main/Aline's_local.theme.css)
+- [Direct Download](https://github.com/TheWarior73/Discord-Theme/blob/main/local.theme.css)
 
 
 ---
