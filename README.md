@@ -1,5 +1,7 @@
 <img width=800 src='./img/Scr Server Screenshot.png'>
 
+# Broken as of today
+
 ## [Jump to the installation section](#download)
 # Informations
 > [!NOTE]
